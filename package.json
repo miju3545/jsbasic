@@ -1,0 +1,39 @@
+{
+	"name": "jsbasic",
+	"version": "1.0.0",
+	"description": "js 기본기",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rovxxmj/jsbasic.git"
+	},
+	"keywords": [
+		"JS",
+		"Basic"
+	],
+	"author": "rov",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/rovxxmj/jsbasic/issues"
+	},
+	"homepage": "https://github.com/rovxxmj/jsbasic#readme",
+	"type": "module",
+	"devDependencies": {
+		"@babel/cli": "^7.18.10",
+		"@babel/core": "^7.19.0",
+		"@babel/preset-env": "^7.19.0",
+		"eslint": "^8.19.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"nodemon": "^2.0.19",
+		"prettier": "^2.7.1"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
+		"moment": "^2.29.4",
+		"moment-timezone": "^0.5.37"
+	}
+}
