@@ -12,16 +12,18 @@ function Promise(cb) {
   };
 
   Promise.prototype.finally = (fcb) => {
-    fcb();
-    Promise.prototype.finallyFn = fcb;
+    this.thenFn = fcb;
     return this;
   };
 
   const resolve = (success) => {
     console.log("RESOLVE>>", success);
     this.state = "resolve";
-    this.thenFn(success);
-    this.arr.push(success);
+    if (success instanceof Promise) {
+      this.thenFn(success);
+    } else {
+      this.thenFn(success);
+    }
   };
 
   const reject = (error) => {
