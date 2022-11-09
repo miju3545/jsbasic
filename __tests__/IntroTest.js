@@ -19,10 +19,10 @@ describe("DefaultMap 테스트", () => {
 describe("Histogram 테스트", () => {
   test("문자열을 맵 객체에 넣기", () => {
     const hist = new Histogram();
-    const string = "rovxxmjxx";
+    const string = "rovxxmjxxtaemincee";
     hist.add(string);
     const counts = hist.letterCounts;
-    const map = [1, 1, 1, 4, 1, 1];
+    const map = [1, 1, 1, 4, 2, 1, 1, 1, 1, 1, 1, 2];
     for (let [key, value] of [...counts]) {
       expect(counts.get(key)).toEqual(value);
     }
