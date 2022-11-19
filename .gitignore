@@ -1,6 +1,5 @@
 .DS_STORE
-.idea/
-dist/
+
 # Logs
 logs
 *.log
@@ -78,4 +77,6 @@ typings/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-
+.idea 
+yarn.lock
+node_modules

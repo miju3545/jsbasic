@@ -1,22 +1,22 @@
-module.exports = {
-  // export default
-  entry: ["@babel/polyfill", "./html/ttt.js"],
-  output: {
-    path: "/Users/miju/jsbasic/dist/js",
-    filename: "bundle.js",
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
-      },
-    ],
-  },
+// module.exports = {
+export default {
+	entry: ['@babel/polyfill', './html/ttt.js'],
+	output: {
+		path: '/Users/jade/workspace/fpp/jsbasic/dist/js',
+		filename: 'bundle.js',
+	},
+	module: {
+		rules: [
+			{
+				test: /\.(js|jsx|ts|tsx)$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+				},
+			},
+		],
+	},
 
-  devtool: "source-map",
-  mode: "development",
+	devtool: 'source-map',
+	mode: 'development',
 };
